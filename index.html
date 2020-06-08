@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QUESTION? ANSWER!</title>
+	<style type="text/css">
+		body {display: flex; overflow:hidden;}
+		body,div {margin:0; }
+  		section {width:225px; height:449.5px; margin:auto; font-size:2em; text-align:center; line-height:449.5px; }
+		.button{width:150px; height:150px; margin-left:220px; margin-top:66.65px; color:black; background-color: white; float:left; }
+		#gogo2{width:150px; height:150px; margin-left:152px; margin-top:66.65px; color:black; float:left; }
+		#gogo3{width:150px; height:150px; margin-left:152px; margin-top:66.65px; color:black; float:left; }
+		#con1{width:225px; height:449.5px; overflow:hidden; float:left; margin-left:187.5px; scroll-behavior:smooth; }
+		#con2{width:225px; height:449.5px; overflow:hidden; float:left; margin-left:75px; scroll-behavior:smooth; }
+		#con3{width:225px; height:449.5px; overflow:hidden; float:left; margin-left:75px; margin-right:187.5px; scroll-behavior:smooth; }
+	</style>
+</head>
+<body>
+	<img src='img1.jpg' style='width:1920px; position:absolute; z-index:-1'>
+	<div style='width:1200px; height:708.65px; margin: auto; margin-top:100px; padding-top:213px; '>
+		<div id="con1">
+			<section id="a1">예상컨대</section>
+			<section id="a2">아쉽지만</section>
+			<section id="a3">오늘이야말로</section>
+			<section id="a4">누가봐도</section>
+			<section id="a5">어쩔 수 없이</section>
+			<section id="a6">예상컨대</section>
+			<section id="a7">아쉽지만</section>
+			<section id="a8">오늘이야말로</section>
+			<section id="a9">누가봐도</section>
+			<section id="a10">어쩔 수 없이</section>
+		</div>
+		<div id="con2">
+			<section id="b1">이것은</section>
+			<section id="b2">정말</section>
+			<section id="b3">좀</section>
+			<section id="b4">대박적으로</section>
+			<section id="b5">아닌 것 같지만</section>
+			<section id="b6">이것은</section>
+			<section id="b7">정말</section>
+			<section id="b8">좀</section>
+			<section id="b9">대박적으로</section>
+			<section id="b10">아닌 것 같지만</section>
+		</div>
+		<div id="con3">
+			<section id="c1">진짜 아니다</section>
+			<section id="c2">생각보다 좋다</section>
+			<section id="c3">괜찮네</section>
+			<section id="c4">하지 마라</section>
+			<section id="c5">그건 아니다</section>
+			<section id="c6">진짜 아니다</section>
+			<section id="c7">생각보다 좋다</section>
+			<section id="c8">괜찮네</section>
+			<section id="c9">하지 마라</section>
+			<section id="c10">그건 아니다</section>
+		</div>
+		<div class="button" id="gogo"><img src='img2.jpg' style='width:150px; height:150px; '></div>
+		<div class="button" id="gogo2"><img src='img2.jpg' style='width:150px; height:150px; '></div>
+		<div class="button" id="gogo3"><img src='img2.jpg' style='width:150px; height:150px; '></div>
+	</div>
+	<script type="text/javascript">
+		
+		gogo.onclick = function(){
+			var b = randomBH(1,10);	
+			var c = document.getElementById("a" + b);
+			c.scrollIntoView();
+		}
+		gogo2.onclick = function(){
+			var bb = randomBH(1,10);	
+			var c = document.getElementById("b" + bb);
+			c.scrollIntoView();
+		}
+		gogo3.onclick = function(){
+			var bbb = randomBH(1,10);	
+			var c = document.getElementById("c" + bbb);
+			c.scrollIntoView();
+		}
+		function randomBH(min, max) {
+  			min = Math.ceil(min);
+  			max = Math.floor(max);
+  			return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+
+	</script>
+</body>
+</html>
